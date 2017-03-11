@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
