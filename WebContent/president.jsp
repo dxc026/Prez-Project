@@ -4,142 +4,140 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="president.css">
 <title>Insert title here</title>
 </head>
 <body>
-
 	<div class="container">
-		<div id="main_area">
-			<!-- Slider -->
-			<div class="row">
-				<div class="col-xs-12" id="slider">
-					<!-- Top part of the slider -->
-					<div class="row">
-						<div class="col-sm-8" id="carousel-bounding-box">
-							<div class="carousel slide" id="myCarousel">
-								<!-- Carousel items -->
-								<div class="carousel-inner">
-									<div class="active item" data-slide-number="0">
-										<img src="http://placehold.it/770x300&text=one">
-									</div>
-
-									<div class="item" data-slide-number="1">
-										<img src="http://placehold.it/770x300&text=two">
-									</div>
-
-									<div class="item" data-slide-number="2">
-										<img src="http://placehold.it/770x300&text=three">
-									</div>
-
-									<div class="item" data-slide-number="3">
-										<img src="http://placehold.it/770x300&text=four">
-									</div>
-
-									<div class="item" data-slide-number="4">
-										<img src="http://placehold.it/770x300&text=five">
-									</div>
-
-									<div class="item" data-slide-number="5">
-										<img src="http://placehold.it/770x300&text=six">
-									</div>
-								</div>
-								<!-- Carousel nav -->
-								<a class="left carousel-control" href="#myCarousel"
-									role="button" data-slide="prev"> <span
-									class="glyphicon glyphicon-chevron-left"></span>
-								</a> <a class="right carousel-control" href="#myCarousel"
-									role="button" data-slide="next"> <span
-									class="glyphicon glyphicon-chevron-right"></span>
-								</a>
-							</div>
-						</div>
-
-						<div class="col-sm-4" id="carousel-text"></div>
-
-						<div id="slide-content" style="display: none;">
-							<div id="slide-content-0">
-								<h2>Slider One</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">
-									October 24 2014 - <a href="#">Read more</a>
-								</p>
-							</div>
-
-							<div id="slide-content-1">
-								<h2>Slider Two</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">
-									October 24 2014 - <a href="#">Read more</a>
-								</p>
-							</div>
-
-							<div id="slide-content-2">
-								<h2>Slider Three</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">
-									October 24 2014 - <a href="#">Read more</a>
-								</p>
-							</div>
-
-							<div id="slide-content-3">
-								<h2>Slider Four</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">
-									October 24 2014 - <a href="#">Read more</a>
-								</p>
-							</div>
-
-							<div id="slide-content-4">
-								<h2>Slider Five</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">
-									October 24 2014 - <a href="#">Read more</a>
-								</p>
-							</div>
-
-							<div id="slide-content-5">
-								<h2>Slider Six</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">
-									October 24 2014 - <a href="#">Read more</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+		<div class="row">
+			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1 class="gallery-title">Gallery</h1>
 			</div>
-			<!--/Slider-->
 
-			<div class="row hidden-xs" id="slider-thumbs">
-				<!-- Bottom switcher of slider -->
-				<ul class="hide-bullets">
-					<li class="col-sm-2"><a class="thumbnail"
-						id="carousel-selector-0"><img
-							src="http://placehold.it/170x100&text=one"></a></li>
-
-					<li class="col-sm-2"><a class="thumbnail"
-						id="carousel-selector-1"><img
-							src="http://placehold.it/170x100&text=two"></a></li>
-
-					<li class="col-sm-2"><a class="thumbnail"
-						id="carousel-selector-2"><img
-							src="http://placehold.it/170x100&text=three"></a></li>
-
-					<li class="col-sm-2"><a class="thumbnail"
-						id="carousel-selector-3"><img
-							src="http://placehold.it/170x100&text=four"></a></li>
-
-					<li class="col-sm-2"><a class="thumbnail"
-						id="carousel-selector-4"><img
-							src="http://placehold.it/170x100&text=five"></a></li>
-
-					<li class="col-sm-2"><a class="thumbnail"
-						id="carousel-selector-5"><img
-							src="http://placehold.it/170x100&text=six"></a></li>
-				</ul>
+			<div align="center">
+				<button class="btn btn-default filter-button active"
+					data-filter="all">All</button>
+				<button class="btn btn-default filter-button" data-filter="hdpe">HDPE
+					Pipes</button>
+				<button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle
+					Pipes</button>
+				<button class="btn btn-default filter-button" data-filter="spray">Spray
+					Nozzle</button>
+				<button class="btn btn-default filter-button"
+					data-filter="irrigation">Irrigation Pipes</button>
 			</div>
+			<br />
+
+
+
+			<div
+				class="gallery">
+				<img src="washington.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="jAdams.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="tJefferson.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="jMaddison.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="jMonroe.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="JqAdams.jpg.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="aJackson.jpg" class="img-responsive">
+			</div>
+
+			<div class="gallery">
+				<img src="martinVanBuren.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="WilliamHeneryHarrison.jpg" class="img-responsive">
+			</div>
+
+			<div class="gallery">
+				 <img src="johnTyler.jpg" class="img-responsive">
+			</div>
+
+			<div
+				class="gallery">
+				<img src="jamesPolk.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="zachTaylor.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="millardFilmore.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="franklinPierce.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="jamesBuchanan.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="abe.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="aJohnson.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="UsGrant.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="rutherfordBHays.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="jamesAGarfield.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="chesterAArthur.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="groverClevland.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="benjaminHarrison.jpg" class="img-responsive">
+			</div>
+			<div
+				class="gallery">
+				<img src="groverClevland.jpg" class="img-responsive">
+			</div>
+			
 		</div>
 	</div>
+	</section>
 
 </body>
 </html>
