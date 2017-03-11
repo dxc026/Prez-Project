@@ -10,20 +10,16 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h1 class="gallery-title">Gallery</h1>
+			<div>
+				<h1 class="gallery-title">US Presidents Gallery</h1>
 			</div>
 			<div align="center">
-				<button class="btn btn-default filter-button active"
-					data-filter="all">All</button>
-				<button class="btn btn-default filter-button" data-filter="hdpe">HDPE
-					Pipes</button>
-				<button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle
-					Pipes</button>
-				<button class="btn btn-default filter-button" data-filter="spray">Spray
-					Nozzle</button>
-				<button class="btn btn-default filter-button"
-					data-filter="irrigation">Irrigation Pipes</button>
+				<form>
+					<button class="btn btn-default filter-button" data-filter="hdpe">Term</button>
+					<button class="btn btn-default filter-button"
+						data-filter="sprinkle">Party</button>
+					<button class="btn btn-default filter-button" data-filter="spray">Name</button>
+				</form>
 			</div>
 			<br />
 
@@ -100,7 +96,69 @@
 			<div class="gallery">
 				<img src="groverClevland.jpg" class="img-responsive">
 			</div>
-
+			<div class="gallery">
+				<img src="Mckinley.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="teddyRoos.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="willamTaft.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="woodrowWilson.png" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="warrenGHarding.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="calvinCoolidge.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="herbertHoover.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="franklinRosevelt.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="truman.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="dwightdEisenhower.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="johnFKennedy.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="lyndonJohnson.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="richardNixon.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="geraldFord.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="jimmyCarter.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="ronaldReagan.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="gBushSenior.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="billClinton.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="georgeBush.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="barackObama.jpg" class="img-responsive">
+			</div>
+			<div class="gallery">
+				<img src="donaldTrump.jpg" class="img-responsive">
+			</div>
 		</div>
 	</div>
 	</section>

@@ -2,7 +2,7 @@
 .gallery-title
  {
      font-size: 36px;
-     color: #42B32F;
+     color: blue;
      text-align: center;
      font-weight: 500;
      margin-bottom: 70px;
@@ -60,6 +60,11 @@
  	marin-left:20px;
  	margin-right: 20px;
  	
+ }
+ 
+ body{
+background-image: url("american-flag-15.jpg");
+ 
  }
  
  img{
