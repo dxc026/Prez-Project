@@ -67,6 +67,14 @@ background-image: url("american-flag-15.jpg");
  
  }
  
+form{
+ color: white;
+ }
+ 
+ button{
+ 
+ color:red;
+ }
  img{
  	
  	height:50%;

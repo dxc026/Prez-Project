@@ -15,10 +15,12 @@
 			</div>
 			<div align="center">
 				<form>
-					<button class="btn btn-default filter-button" data-filter="hdpe">Term</button>
-					<button class="btn btn-default filter-button"
+					<label>Filter by <input type="text"></label>
+
+					<button class="button" data-filter="hdpe">Term</button>
+					<button class="button"
 						data-filter="sprinkle">Party</button>
-					<button class="btn btn-default filter-button" data-filter="spray">Name</button>
+					<button class="button" data-filter="spray">Name</button>
 				</form>
 			</div>
 			<br />
