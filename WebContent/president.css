@@ -1,11 +1,11 @@
 @CHARSET "UTF-8";
-.gallery-title
- {
-     font-size: 36px;
-     color: blue;
-     text-align: center;
-     font-weight: 500;
-     margin-bottom: 70px;
+
+ .title{
+ 	font-size: 36px;
+ 	color: white;
+ 	text-align: center;
+ 	front-weight;
+ 	margin-bottom: 70px;
  }
  .gallery-title:after {
      content: "";

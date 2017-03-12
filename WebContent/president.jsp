@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row">
 			<div>
-				<h1 class="gallery-title">US Presidents Gallery</h1>
+				<h1 class="title">US Presidents Gallery</h1>
 			</div>
 			<div align="center">
 				<form>
