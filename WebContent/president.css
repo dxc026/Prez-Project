@@ -51,6 +51,12 @@
  #alignrows{
  text-align:center;
  }
+ .name{
+ font-family: bold;
+ font-size: 20px;
+ color: white;
+ font-style: outline;
+ }
  
  .gallery{
  	display:inline-block;
