@@ -1,20 +1,19 @@
 @CHARSET "UTF-8";
 
- .title{
+ #title{
  	font-size: 36px;
  	color: white;
  	text-align: center;
- 	front-weight;
  	margin-bottom: 70px;
  }
- .gallery-title:after {
+ /* .gallery-title:after {
      content: "";
      position: absolute;
      width: 7.5%;
      left: 46.5%;
      height: 45px;
      border-bottom: 1px solid #5e5e5e;
- }
+ } */
  .filter-button
  {
      font-size: 18px;
@@ -49,6 +48,9 @@
  {
      margin-bottom: 30px;
  }
+ #alignrows{
+ text-align:center;
+ }
  
  .gallery{
  	display:inline-block;
@@ -57,13 +59,15 @@
  	width: 20%; 
  	border-radius: 10px;	
  	text-align: center;
- 	marin-left:20px;
+ 	marin-left:40px;
  	margin-right: 20px;
  	
  }
  
  body{
 background-image: url("american-flag-15.jpg");
+background-size: cover;
+background-repeat: no-repeat;
  
  }
  
