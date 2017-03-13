@@ -8,21 +8,26 @@
 </head>
 <link rel="stylesheet" href="/Presidents/president.css">
 <body>
+<div id="alignrows">
+
 <h1 id="presidentintro">${president.presidentNumber}. ${president.firstName}
-        ${president.middleName} ${president.lastName}</h1><br>
-    <img src="${president.picture}"></img>
+        ${president.middleName} ${president.lastName}<br></h1>
+    <img id="prespic"src="${president.picture}"></img>
     <br>
     <p id="funfact">Was president from ${president.dateBegin} to
         ${president.dateEnd}</p>
     <p id="funfact">${president.funFact}</p>
+    </div>
+    <div class="button">
     <form action="GetPresidents.do" method="POST">
-        <button name="term" value="${president.presidentNumber-1}">Previous</button>
-        <button name="term" value="${president.presidentNumber+1}">Next</button>
+        <button class="button" name="term" value="${president.presidentNumber-1}">Previous</button>
+        <button class="button" name="term" value="${president.presidentNumber+1}">Next</button>
     </form>
     <br>
     <form action="GetPresidents.do" method="GET">
-        <button name="Gallery">Return to Gallery</button>
+        <button class="button" name="Gallery">Return to Gallery</button>
     </form>
+    </div>
     
 </body>
 </html>

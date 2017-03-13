@@ -40,8 +40,14 @@ public class PresidentServlet extends HttpServlet {
 	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		int term = Integer.parseInt(req.getParameter("term"));
-		PresidentDAO president = presidentsList.get(term);
 
+		if(term > presidentsList.size()) {
+			term = 1;
+		} else if (term < 1) {
+			term = presidentsList.size();
+		}
+
+		PresidentDAO president = presidentsList.get(term);
 		req.setAttribute("president", president);
 		req.getRequestDispatcher("/results.jsp").forward(req, resp);
 

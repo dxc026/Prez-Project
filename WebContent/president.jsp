@@ -18,11 +18,13 @@
 			</div>
 			<div align="center">
 				<form method="POST" action="GetNums.do">
-					<label>Search:<input name="term" text="text"></label>
-
-					<button class="button" data-filter="term">Term</button>
-					
+					<label>Term:<input name="term" text="text"></label> 
+					<label>Party:<input
+						name="party" text="text"></label> <label>Last Name:<input
+						name="Name" text="text"></label>
+					<button class="button">Search</button>
 				</form>
+
 			</div>
 			<br />
 			<div id="alignrows">
@@ -32,7 +34,7 @@
 					</form>
 
 					<a href="index.html"><img src="photos/washington.jpg"
-						class="img-responsive"></a> 
+						class="img-responsive"></a>
 
 				</div>
 				<div class="gallery">
