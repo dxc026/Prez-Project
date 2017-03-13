@@ -7,269 +7,452 @@
 <title>US Presidents</title>
 <link rel="stylesheet" href="/Presidents/president.css">
 </head>
+
 <body>
+
+
 	<div class="container">
 		<div class="row">
 			<div>
 				<h1 id="title">US Presidents Gallery</h1>
 			</div>
 			<div align="center">
-				<form>
-					<label>Filter by <input type="text"></label>
+				<form method="POST" action="GetNums.do">
+					<label>Search:<input name="term" text="text"></label>
 
-					<button class="button" data-filter="hdpe">Term</button>
-					<button class="button" data-filter="sprinkle">Party</button>
-					<button class="button" data-filter="spray">Name</button>
+					<button class="button" data-filter="term">Term</button>
+					
 				</form>
 			</div>
 			<br />
 			<div id="alignrows">
 				<div class="gallery">
-					<a href="index.html"> <img src="washington.jpg"
-						class="img-responsive"></a>
-					<p class="name">George Washington</p>
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="1">George Washington</button>
+					</form>
+
+					<a href="index.html"><img src="photos/washington.jpg"
+						class="img-responsive"></a> 
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="jAdams.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="2">John Adams</button>
+					</form>
+
+					<a href="index.html"><img src="photos/jAdams.jpg"
 						class="img-responsive"></a>
-						<p class="name">John Adams</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="tJefferson.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="3">Thomas Jefferson</button>
+					</form>
+
+					<a href="index.html"><img src="photos/tJefferson.jpg"
 						class="img-responsive"></a>
-					<p class="name">Thomas Jefferson</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="jMaddison.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="4">James Madison</button>
+					</form>
+
+					<a href="index.html"><img src="photos/jMaddison.jpg"
 						class="img-responsive"></a>
-					<p class="name">James Madison</p>
+
 				</div>
 			</div>
 			<div id="alignrows">
 				<div class="gallery">
-					<a href="index.html"><img src="jMonroe.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="5">James Monroe</button>
+					</form>
+
+					<a href="index.html"><img src="photos/jMonroe.jpg"
 						class="img-responsive"></a>
-					<p class="name">James Monroe</p>
+
 				</div>
 
 				<div class="gallery">
-					<a href="index.html"><img src="JqAdams.jpg.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="6">John Quincy Adams</button>
+					</form>
+
+					<a href="index.html"><img src="photos/JqAdams.jpg.jpg"
 						class="img-responsive"></a>
-					<p class="name">John Quincy Adams</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="aJackson.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="7">Andrew Jackson</button>
+					</form>
+
+					<a href="index.html"><img src="photos/aJackson.jpg"
 						class="img-responsive"></a>
-					<p class="name">Andrew Jackson</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="martinVanBuren.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="8">Martin Van Buren</button>
+					</form>
+
+					<a href="index.html"><img src="photos/martinVanBuren.jpg"
 						class="img-responsive"></a>
-					<p class="name">Martin Van Buren</p>
-				</div>
-			</div>
-			<div id="alignrows">
-				<div class="gallery">
-					<a href="index.html"><img src="WilliamHeneryHarrison.jpg"
-						class="img-responsive"></a>
-					<p class="name">William Henry Harrison</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="johnTyler.jpg"
-						class="img-responsive"></a>
-					<p class="name">John Tyler</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="jamesPolk.jpg"
-						class="img-responsive"></a>
-					<p class="name">James K. Polk</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="zachTaylor.jpg"
-						class="img-responsive"></a>
-					<p class="name">Zachary Taylor</p>
+
 				</div>
 			</div>
 			<div id="alignrows">
 				<div class="gallery">
-					<a href="index.html"><img src="millardFilmore.jpg"
-						class="img-responsive"></a>
-					<p class="name">Millard Fillmore</p>
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="9">William Henry Harrison</button>
+					</form>
+
+					<a href="index.html"><img
+						src="photos/WilliamHeneryHarrison.jpg" class="img-responsive"></a>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="franklinPierce.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="10">John Tyler</button>
+					</form>
+
+					<a href="index.html"><img src="photos/johnTyler.jpg"
 						class="img-responsive"></a>
-					<p class="name">Franklin Pierce</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="jamesBuchanan.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="11">James K. Polk</button>
+					</form>
+
+					<a href="index.html"><img src="photos/jamesPolk.jpg"
 						class="img-responsive"></a>
-					<p class="name">James Buchanan</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="abe.jpg" class="img-responsive"></a>
-					<p class="name">Abraham Lincoln</p>
-				</div>
-			</div>
-			<div id="alignrows">
-				<div class="gallery">
-					<a href="index.html"><img src="aJohnson.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="12">Zachary Taylor</button>
+					</form>
+
+					<a href="index.html"><img src="photos/zachTaylor.jpg"
 						class="img-responsive"></a>
-					<p class="name">Andrew Johnson</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="UsGrant.jpg"
-						class="img-responsive"></a>
-					<p class="name">Ulysess S. Grant</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="rutherfordBHays.jpg"
-						class="img-responsive"></a>
-					<p class="name">Rutherford B. Hayes</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="jamesAGarfield.jpg"
-						class="img-responsive"></a>
-					<p class="name">James A. Garfield</p>
+
 				</div>
 			</div>
 			<div id="alignrows">
 				<div class="gallery">
-					<a href="index.html"><img src="chesterAArthur.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="13">Millard Fillmore</button>
+					</form>
+
+					<a href="index.html"><img src="photos/millardFilmore.jpg"
 						class="img-responsive"></a>
-					<p class="name">Chester A. Arthur</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="groverClevland.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="14">Franklin Pierce</button>
+					</form>
+
+					<a href="index.html"><img src="photos/franklinPierce.jpg"
 						class="img-responsive"></a>
-					<p class="name">Grover Clevland</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="benjaminHarrison.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="15">James Buchanan</button>
+					</form>
+
+					<a href="index.html"><img src="photos/jamesBuchanan.jpg"
 						class="img-responsive"></a>
-					<p class="name">Benjamin Harrison</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="groverClevland.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="16">Abraham Lincoln</button>
+					</form>
+
+					<a href="index.html"><img src="photos/abe.jpg"
 						class="img-responsive"></a>
-					<p class="name">Grover Clevland</p>
-				</div>
-			</div>
-			<div id="alignrows">
-				<div class="gallery">
-					<a href="index.html"><img src="Mckinley.jpg"
-						class="img-responsive"></a>
-					<p class="name">William McKinley</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="teddyRoos.jpg"
-						class="img-responsive"></a>
-					<p class="name">Theodore Roosevelt</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="willamTaft.jpg"
-						class="img-responsive"></a>
-					<p class="name">William Taft</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="woodrowWilson.png"
-						class="img-responsive"></a>
-					<p class="name">Woodrow Wilson</p>
+
 				</div>
 			</div>
 			<div id="alignrows">
 				<div class="gallery">
-					<a href="index.html"><img src="warrenGHarding.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="17">Andrew Johnson</button>
+					</form>
+
+					<a href="index.html"><img src="photos/aJohnson.jpg"
 						class="img-responsive"></a>
-					<p class="name">Warren G. Harding</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="calvinCoolidge.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="18">Ulysses S. Grant</button>
+					</form>
+
+					<a href="index.html"><img src="photos/UsGrant.jpg"
 						class="img-responsive"></a>
-					<p class="name">Calvin Coolidge</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="herbertHoover.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="19">Rutherford B. Hayes</button>
+					</form>
+
+					<a href="index.html"><img src="photos/rutherfordBHays.jpg"
 						class="img-responsive"></a>
-					<p class="name">Hebert Hoover</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="franklinRosevelt.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="20">James A. Garfield</button>
+					</form>
+
+					<a href="index.html"><img src="photos/jamesAGarfield.jpg"
 						class="img-responsive"></a>
-					<p class="name">Franklin D. Roosevelt</p>
-				</div>
-			</div>
-			<div id="alignrows">
-				<div class="gallery">
-					<a href="index.html"><img src="truman.jpg"
-						class="img-responsive"></a>
-					<p class="name">Harry S. Truman</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="dwightdEisenhower.jpg"
-						class="img-responsive"></a>
-					<p class="name">Dwight D. Eisenhower</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="johnFKennedy.jpg"
-						class="img-responsive"></a>
-					<p class="name">John F. Kennedy</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="lyndonJohnson.jpg"
-						class="img-responsive"></a>
-					<p class="name">Lyndon B. Johnson</p>
+
 				</div>
 			</div>
 			<div id="alignrows">
 				<div class="gallery">
-					<a href="index.html"><img src="richardNixon.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="21">Chester A. Arthur</button>
+					</form>
+
+					<a href="index.html"><img src="photos/chesterAArthur.jpg"
 						class="img-responsive"></a>
-					<p class="name">Richard Nixon</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="geraldFord.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="22">Grover Clevland</button>
+					</form>
+
+					<a href="index.html"><img src="photos/groverClevland.jpg"
 						class="img-responsive"></a>
-					<p class="name">Gerald Ford</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="jimmyCarter.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="23">Benjamin Harrison</button>
+					</form>
+
+					<a href="index.html"><img src="photos/benjaminHarrison.jpg"
 						class="img-responsive"></a>
-					<p class="name">Jimmy Carter</p>
+
 				</div>
 				<div class="gallery">
-					<a href="index.html"><img src="ronaldReagan.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="24">Grover Clevland</button>
+					</form>
+
+					<a href="index.html"><img src="photos/groverClevland.jpg"
 						class="img-responsive"></a>
-					<p class="name">Ronald Reagan</p>
-				</div>
-			</div>
-			<div id="alignrows">
-				<div class="gallery">
-					<a href="index.html"><img src="gBushSenior.jpg"
-						class="img-responsive"></a>
-					<p class="name">George H.W Bush</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="billClinton.jpg"
-						class="img-responsive"></a>
-					<p class="name">Bill Clinton</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="georgeBush.jpg"
-						class="img-responsive"></a>
-					<p class="name">George W. Bush</p>
-				</div>
-				<div class="gallery">
-					<a href="index.html"><img src="barackObama.jpg"
-						class="img-responsive"></a>
-					<p class="name">Barack Obama</p>
+
 				</div>
 			</div>
 			<div id="alignrows">
 				<div class="gallery">
-					<a href="index.html"><img src="donaldTrump.jpg"
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="25">William McKinley</button>
+					</form>
+
+					<a href="index.html"><img src="photos/Mckinley.jpg"
 						class="img-responsive"></a>
-					<p class="name">Donald Trump</p>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="26">Theodore Roosevelt</button>
+					</form>
+
+					<a href="index.html"><img src="photos/teddyRoos.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="27">William Taft</button>
+					</form>
+
+					<a href="index.html"><img src="photos/willamTaft.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="28">Woodrow Wilson</button>
+					</form>
+
+					<a href="index.html"><img src="photos/woodrowWilson.png"
+						class="img-responsive"></a>
+
+				</div>
+			</div>
+			<div id="alignrows">
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="29">Warren G. Harding</button>
+					</form>
+
+					<a href="index.html"><img src="photos/warrenGHarding.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="30">Calvin Coolidge</button>
+					</form>
+
+					<a href="index.html"><img src="photos/calvinCoolidge.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="31">Herbert Hoover</button>
+					</form>
+
+					<a href="index.html"><img src="photos/herbertHoover.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="32">Franklin D. Roosevelt</button>
+					</form>
+
+					<a href="index.html"><img src="photos/franklinRosevelt.jpg"
+						class="img-responsive"></a>
+
+				</div>
+			</div>
+			<div id="alignrows">
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="33">Harry S. Truman</button>
+					</form>
+
+					<a href="index.html"><img src="photos/truman.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="34">Dwight D. Eisenhower</button>
+					</form>
+
+					<a href="index.html"><img src="photos/dwightdEisenhower.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="35">John F. Kennedy</button>
+					</form>
+
+					<a href="index.html"><img src="photos/johnFKennedy.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="36">Lyndon B. Johnson</button>
+					</form>
+
+					<a href="index.html"><img src="photos/lyndonJohnson.jpg"
+						class="img-responsive"></a>
+
+				</div>
+			</div>
+			<div id="alignrows">
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="37">Richard Nixon</button>
+					</form>
+
+					<a href="index.html"><img src="photos/richardNixon.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="38">Gerald Ford</button>
+					</form>
+
+					<a href="index.html"><img src="photos/geraldFord.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="39">Jimmy Carter</button>
+					</form>
+
+					<a href="index.html"><img src="photos/jimmyCarter.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="40">Ronald Reagan</button>
+					</form>
+
+					<a href="index.html"><img src="photos/ronaldReagan.jpg"
+						class="img-responsive"></a>
+
+				</div>
+			</div>
+			<div id="alignrows">
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="41">George H. W. Bush</button>
+					</form>
+
+					<a href="index.html"><img src="photos/gBushSenior.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="42">Bill Clinton</button>
+					</form>
+
+					<a href="index.html"><img src="photos/billClinton.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="43">George W. Bush</button>
+					</form>
+
+					<a href="index.html"><img src="photos/georgeBush.jpg"
+						class="img-responsive"></a>
+
+				</div>
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="44">Barack Obama</button>
+					</form>
+
+					<a href="index.html"><img src="photos/barackObama.jpg"
+						class="img-responsive"></a>
+
+				</div>
+			</div>
+			<div id="alignrows">
+				<div class="gallery">
+					<form action="GetPresidents.do" method="post">
+						<button name="term" value="45">Donald Trump</button>
+					</form>
+
+					<a href="index.html"><img src="photos/donaldTrump.jpg"
+						class="img-responsive"></a>
+
 				</div>
 			</div>
 		</div>

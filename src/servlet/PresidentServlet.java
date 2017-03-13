@@ -1,6 +1,8 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,35 +10,40 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import data.PresidentDAO;
+import data.PresidentFileDAO;
+
 /**
  * Servlet implementation class PresidentServlet
  */
-@WebServlet(name = "PresidentServlet1", urlPatterns = { "/PresidentServlet1" })
+@WebServlet("/presidents")
 public class PresidentServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public PresidentServlet() {
+	private PresidentDAO presidentsDAO;
+	private Map<Integer, PresidentDAO> presidentsList;
 
-    }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//req.setAttribute("inventory", inv);
+	public void init() throws ServletException {
+		presidentsDAO = new PresidentFileDAO(getServletContext());
+		presidentsList = new HashMap<>();
+		for (PresidentDAO p : presidentsDAO.getPresidentsList()) {
+			presidentsList.put(p.getPresidentNumber(), p);
+		}
+	}
+
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setAttribute("presidentsList", presidentsList);
 		req.getRequestDispatcher("/president.jsp").forward(req, resp);
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("test");
-	}
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		int term = Integer.parseInt(req.getParameter("term"));
+		PresidentDAO president = presidentsList.get(term);
 
+		req.setAttribute("president", president);
+		req.getRequestDispatcher("/results.jsp").forward(req, resp);
+
+	}
 }
